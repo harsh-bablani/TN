@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Plane } from 'lucide-react';
-import Logo from '../Logo.png';
+import Logo from '../logo.png';
 
 interface NavbarProps {
   currentPage: string;
