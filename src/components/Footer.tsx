@@ -1,4 +1,4 @@
-import { Plane, Mail, Phone, MapPin, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Plane, Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (page: string) => void;
@@ -28,7 +28,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               Redefining travel with precision, luxury, and seamless experiences for every kind of traveler.
             </p>
             <div className="flex gap-3">
-              {[Instagram, Twitter, Linkedin, Facebook].map((Icon, i) => (
+              {[Instagram, Linkedin, Facebook].map((Icon, i) => (
                 <button
                   key={i}
                   className="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand-gold hover:text-brand-dark-blue flex items-center justify-center transition-all duration-300 text-white/60"
@@ -62,7 +62,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <h4 className="font-display font-bold text-white mb-5">Services</h4>
             <ul className="space-y-3">
-              {['Corporate Travel', 'Event Travel', 'Tourism Packages', 'Government Travel', 'Sports Travel', 'University Travel'].map((service) => (
+              {['Corporate Travel', 'Event Travel', 'Tourism Packages', 'Government Travel'].map((service) => (
                 <li key={service}>
                   <span className="font-body text-white/60 text-sm hover:text-brand-gold transition-colors cursor-default">
                     {service}
@@ -77,18 +77,18 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white/60">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-brand-gold" />
-                <span className="font-body text-sm">123 Travel Plaza, Business Bay, Dubai, UAE</span>
+                <span className="font-body text-sm">First floor Petroda House Great East Road, Lusaka, Zambia</span>
               </li>
               <li className="flex items-center gap-3 text-white/60">
                 <Phone size={16} className="shrink-0 text-brand-gold" />
-                <a href="tel:+971501234567" className="font-body text-sm hover:text-white transition-colors">
-                  +971 50 123 4567
+                <a href="tel:+260771278844" className="font-body text-sm hover:text-white transition-colors">
+                  +260 771 278 844
                 </a>
               </li>
               <li className="flex items-center gap-3 text-white/60">
                 <Mail size={16} className="shrink-0 text-brand-gold" />
-                <a href="mailto:hello@tripnoise.com" className="font-body text-sm hover:text-white transition-colors">
-                  hello@tripnoise.com
+                <a href="mailto:sales.lun@tripnoise.com" className="font-body text-sm hover:text-white transition-colors">
+                  sales.lun@tripnoise.com
                 </a>
               </li>
             </ul>

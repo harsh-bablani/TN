@@ -27,9 +27,7 @@ const services = [
   { icon: Calendar, label: 'Event Travel' },
   { icon: Globe, label: 'Tourism Packages' },
   { icon: Landmark, label: 'Government Travel' },
-  { icon: Trophy, label: 'Sports & Entertainment' },
-  { icon: GraduationCap, label: 'University Travel' },
-];
+  ];
 
 const values = [
   {
@@ -58,6 +56,7 @@ export default function About() {
   const heroRef = useAnimateSection();
   const storyRef = useAnimateSection();
   const mvRef = useAnimateSection();
+  const teamRef = useAnimateSection();
   const valuesRef = useAnimateSection();
   const servicesRef = useAnimateSection();
 
@@ -156,7 +155,7 @@ export default function About() {
         </div>
       </section>
 
-      <section ref={mvRef} className="relative py-32 px-6 bg-gradient-to-br from-brand-dark-blue via-brand-dark-blue/95 to-black overflow-hidden">
+      <section ref={teamRef} className="relative py-32 px-6 bg-gradient-to-br from-brand-dark-blue via-brand-dark-blue/95 to-black overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-gold/5 to-transparent" />
         
@@ -346,7 +345,7 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-2xl mx-auto">
             {services.map((service, index) => (
               <div key={index} className="section-animate group p-6 rounded-2xl bg-white hover:bg-brand-dark-blue card-hover border border-gray-100 transition-all duration-400 cursor-default">
                 <service.icon

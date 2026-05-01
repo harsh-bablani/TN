@@ -54,14 +54,14 @@ Message: ${form.message}
 Please contact me to discuss my travel plans.`;
     
     // Redirect to WhatsApp
-    const whatsappUrl = `https://wa.me/260574576045?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/260771278844?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     setLoading(false);
     setSubmitted(true);
   };
 
-  const whatsappUrl = `https://wa.me/260574576045?text=${encodeURIComponent('Hi TRIP NOISE, I want to plan a trip')}`;
+  const whatsappUrl = `https://wa.me/260771278844?text=${encodeURIComponent('Hi TRIP NOISE, I want to plan a trip')}`;
 
   return (
     <main className="bg-brand-bg">
@@ -118,19 +118,19 @@ Please contact me to discuss my travel plans.`;
                   {
                     icon: MapPin,
                     label: 'Address',
-                    value: '123 Travel Plaza, Business Bay\nDubai, UAE',
+                    value: 'First floor Petroda House Great East Road\nLusaka, Zambia',
                   },
                   {
                     icon: Phone,
                     label: 'Phone',
-                    value: '+260 57 45 760 45',
-                    href: 'tel:+260574576045',
+                    value: '+260 771 278 844',
+                    href: 'tel:+260771278844',
                   },
                   {
                     icon: Mail,
                     label: 'Email',
-                    value: 'hello@tripnoise.com',
-                    href: 'mailto:hello@tripnoise.com',
+                    value: 'sales.lun@tripnoise.com',
+                    href: 'mailto:sales.lun@tripnoise.com',
                   },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-gray-100 card-hover">

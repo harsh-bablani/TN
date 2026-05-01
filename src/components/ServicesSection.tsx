@@ -2,13 +2,7 @@ import { useRef, useEffect } from 'react';
 import { Globe, MapPin, Compass, DollarSign, Users, Headphones, Shield, Users2, Plane, Hotel, Calendar, FileText, Car } from 'lucide-react';
 
 const services = [
-  {
-    icon: Globe,
-    title: 'International Tours',
-    description: 'Explore the world with our carefully curated international tour packages to exotic destinations.',
-    color: '#1E5AA8',
-  },
-  {
+    {
     icon: MapPin,
     title: 'Customized Itineraries',
     description: 'Personalized travel plans tailored to your preferences, interests, and budget.',
@@ -20,13 +14,7 @@ const services = [
     description: 'Thrilling experiences for adventure seekers, from trekking to water sports and beyond.',
     color: '#1E5AA8',
   },
-  {
-    icon: DollarSign,
-    title: 'Affordable Packages',
-    description: 'Budget-friendly options without compromising on quality or experiences.',
-    color: '#0D3B82',
-  },
-  {
+    {
     icon: Users,
     title: 'Local Experiences',
     description: 'Authentic cultural immersion with local guides and exclusive access to hidden gems.',
