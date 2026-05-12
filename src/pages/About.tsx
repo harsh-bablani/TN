@@ -174,40 +174,83 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Neeraj Vatwani */}
-            <div className="section-animate">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/20 to-brand-yellow/20 rounded-3xl blur-xl group-hover:from-brand-gold/30 group-hover:to-brand-yellow/30 transition-all duration-500 opacity-75" />
-                <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="relative flex-shrink-0">
-                      <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
-                      <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
-                        <img
-                          src="/src/Neeraj.jpg"
-                          alt="Neeraj Vatwani"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
+          <div className="max-w-6xl mx-auto">
+            {/* Top Row: Neeraj and Rajesh */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
+              {/* Neeraj Vatwani */}
+              <div className="section-animate">
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/20 to-brand-yellow/20 rounded-3xl blur-xl group-hover:from-brand-gold/30 group-hover:to-brand-yellow/30 transition-all duration-500 opacity-75" />
+                  <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
+                    <div className="flex flex-col md:flex-row gap-8 items-center">
+                      <div className="relative flex-shrink-0">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
+                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
+                          <img
+                            src="/src/Neeraj.jpg"
+                            alt="Neeraj Vatwani"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          />
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1 text-center md:text-left">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
+                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">CEO & Director</span>
+                        </div>
+                        <h3 className="font-display text-3xl font-bold text-white mb-4">
+                          Neeraj Vatwani
+                        </h3>
+                        <p className="text-white/80 font-light leading-relaxed mb-6">
+                          With over 8 years of transformative leadership in the travel industry, Neeraj architects innovative travel solutions that blend luxury with efficiency. His strategic vision has positioned TRIP NOISE as a global leader in premium travel experiences.
+                        </p>
+                        <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                          {['Strategic Vision', 'Operational Excellence', 'Innovation', 'Global Leadership'].map((skill) => (
+                            <span key={skill} className="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs text-white/90">
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                    
-                    <div className="flex-1 text-center md:text-left">
-                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
-                        <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">CEO & Director</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Rajesh Nankani */}
+              <div className="section-animate">
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/20 to-brand-yellow/20 rounded-3xl blur-xl group-hover:from-brand-gold/30 group-hover:to-brand-yellow/30 transition-all duration-500 opacity-75" />
+                  <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
+                    <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
+                      <div className="relative flex-shrink-0">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
+                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
+                          <img
+                            src="/src/Rajesh.jpg"
+                            alt="Rajesh Nankani"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          />
+                        </div>
                       </div>
-                      <h3 className="font-display text-3xl font-bold text-white mb-4">
-                        Neeraj Vatwani
-                      </h3>
-                      <p className="text-white/80 font-light leading-relaxed mb-6">
-                        With over 15 years of transformative leadership in the travel industry, Neeraj architects innovative travel solutions that blend luxury with efficiency. His strategic vision has positioned TRIP NOISE as a global leader in premium travel experiences.
-                      </p>
-                      <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                        {['Strategic Vision', 'Operational Excellence', 'Innovation', 'Global Leadership'].map((skill) => (
-                          <span key={skill} className="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs text-white/90">
-                            {skill}
-                          </span>
-                        ))}
+                      
+                      <div className="flex-1 text-center md:text-right">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
+                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">Managing Director</span>
+                        </div>
+                        <h3 className="font-display text-3xl font-bold text-white mb-4">
+                          Rajesh Nankani
+                        </h3>
+                        <p className="text-white/80 font-light leading-relaxed mb-6">
+                          Rajesh's exceptional expertise in business development and customer relationship management has been instrumental in expanding TRIP NOISE's global footprint. His commitment to excellence ensures every client receives world-class service.
+                        </p>
+                        <div className="flex flex-wrap gap-2 justify-center md:justify-end">
+                          {['Business Growth', 'Client Relations', 'Global Expansion', 'Service Excellence'].map((skill) => (
+                            <span key={skill} className="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs text-white/90">
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -215,39 +258,41 @@ export default function About() {
               </div>
             </div>
 
-            {/* Rajesh Nankani */}
-            <div className="section-animate">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/20 to-brand-yellow/20 rounded-3xl blur-xl group-hover:from-brand-gold/30 group-hover:to-brand-yellow/30 transition-all duration-500 opacity-75" />
-                <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
-                  <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
-                    <div className="relative flex-shrink-0">
-                      <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
-                      <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
-                        <img
-                          src="/src/Rajesh.jpg"
-                          alt="Rajesh Nankani"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
+            {/* Bottom Row: Manish centered */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-2xl section-animate">
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/20 to-brand-yellow/20 rounded-3xl blur-xl group-hover:from-brand-gold/30 group-hover:to-brand-yellow/30 transition-all duration-500 opacity-75" />
+                  <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
+                    <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+                      <div className="relative flex-shrink-0">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
+                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
+                          <img
+                            src="/src/Manish.png"
+                            alt="Manish Motiyani"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          />
+                        </div>
                       </div>
-                    </div>
-                    
-                    <div className="flex-1 text-center md:text-right">
-                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
-                        <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">Managing Director</span>
-                      </div>
-                      <h3 className="font-display text-3xl font-bold text-white mb-4">
-                        Rajesh Nankani
-                      </h3>
-                      <p className="text-white/80 font-light leading-relaxed mb-6">
-                        Rajesh's exceptional expertise in business development and customer relationship management has been instrumental in expanding TRIP NOISE's global footprint. His commitment to excellence ensures every client receives world-class service.
-                      </p>
-                      <div className="flex flex-wrap gap-2 justify-center md:justify-end">
-                        {['Business Growth', 'Client Relations', 'Global Expansion', 'Service Excellence'].map((skill) => (
-                          <span key={skill} className="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs text-white/90">
-                            {skill}
-                          </span>
-                        ))}
+                      
+                      <div className="flex-1 text-center md:text-left">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
+                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">COO & Partner</span>
+                        </div>
+                        <h3 className="font-display text-3xl font-bold text-white mb-4">
+                          Manish Motiyani
+                        </h3>
+                        <p className="text-white/80 font-light leading-relaxed mb-6">
+                          With over 5 years of operational excellence in the travel industry, Manish drives day-to-day operations and strategic partnerships. His focus on efficiency and customer satisfaction has been instrumental in scaling TRIP NOISE's operations across multiple markets.
+                        </p>
+                        <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                          {['Operations Management', 'Strategic Partnerships', 'Customer Experience', 'Business Growth'].map((skill) => (
+                            <span key={skill} className="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs text-white/90">
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>

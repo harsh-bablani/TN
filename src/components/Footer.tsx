@@ -28,14 +28,30 @@ export default function Footer({ onNavigate }: FooterProps) {
               Redefining travel with precision, luxury, and seamless experiences for every kind of traveler.
             </p>
             <div className="flex gap-3">
-              {[Instagram, Linkedin, Facebook].map((Icon, i) => (
-                <button
-                  key={i}
-                  className="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand-gold hover:text-brand-dark-blue flex items-center justify-center transition-all duration-300 text-white/60"
-                >
-                  <Icon size={16} />
-                </button>
-              ))}
+              <a
+                href="https://www.instagram.com/trip.noise?igsh=cjgzeGtyMDRwanBj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand-gold hover:text-brand-dark-blue flex items-center justify-center transition-all duration-300 text-white/60"
+              >
+                <Instagram size={16} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/tripnoise-travels/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand-gold hover:text-brand-dark-blue flex items-center justify-center transition-all duration-300 text-white/60"
+              >
+                <Linkedin size={16} />
+              </a>
+              <a
+                href="https://www.facebook.com/share/15kis46SwXT/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand-gold hover:text-brand-dark-blue flex items-center justify-center transition-all duration-300 text-white/60"
+              >
+                <Facebook size={16} />
+              </a>
             </div>
           </div>
 
