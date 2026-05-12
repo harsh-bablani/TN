@@ -187,7 +187,7 @@ export default function About() {
                         <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
                         <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
                           <img
-                            src="/src/Neeraj.jpg"
+                            src="/Neeraj.jpg"
                             alt="Neeraj Vatwani"
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
@@ -196,13 +196,13 @@ export default function About() {
                       
                       <div className="flex-1 text-center md:text-left">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
-                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">CEO & Director</span>
+                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">CEO & PARTNER</span>
                         </div>
                         <h3 className="font-display text-3xl font-bold text-white mb-4">
                           Neeraj Vatwani
                         </h3>
                         <p className="text-white/80 font-light leading-relaxed mb-6">
-                          With over 8 years of transformative leadership in the travel industry, Neeraj architects innovative travel solutions that blend luxury with efficiency. His strategic vision has positioned TRIP NOISE as a global leader in premium travel experiences.
+                          Drawing on 10+ years of experience across African and Gulf markets, Neeraj offers a unique global perspective shaped by deep regional understanding and strategic business leadership. His vision for innovation and operational excellence continues to guide TRIP NOISE toward sustainable international growth.
                         </p>
                         <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                           {['Strategic Vision', 'Operational Excellence', 'Innovation', 'Global Leadership'].map((skill) => (
@@ -221,13 +221,13 @@ export default function About() {
               <div className="section-animate">
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-r from-brand-gold/20 to-brand-yellow/20 rounded-3xl blur-xl group-hover:from-brand-gold/30 group-hover:to-brand-yellow/30 transition-all duration-500 opacity-75" />
-                  <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
+                  <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20 min-h-[380px] lg:max-w-[800px]">
                     <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
                       <div className="relative flex-shrink-0">
                         <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
                         <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
                           <img
-                            src="/src/Rajesh.jpg"
+                            src="/Rajesh.jpg"
                             alt="Rajesh Nankani"
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
@@ -236,13 +236,13 @@ export default function About() {
                       
                       <div className="flex-1 text-center md:text-right">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
-                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">Managing Director</span>
+                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">MANAGING DIRECTOR & PARTNER</span>
                         </div>
                         <h3 className="font-display text-3xl font-bold text-white mb-4">
                           Rajesh Nankani
                         </h3>
                         <p className="text-white/80 font-light leading-relaxed mb-6">
-                          Rajesh's exceptional expertise in business development and customer relationship management has been instrumental in expanding TRIP NOISE's global footprint. His commitment to excellence ensures every client receives world-class service.
+                          Rajesh Nankani is a seasoned travel industry professional with over 8 years of experience in sales, business development, operations, and leadership. Having progressed from Sales Executive to leadership roles including Country Manager and Regional Manager, he has developed strong expertise in global travel markets and customer engagement. As the Founder & Director of TRIP NOISE, Rajesh is focused on delivering customer-centric travel solutions while driving business growth and operational excellence across international markets.
                         </p>
                         <div className="flex flex-wrap gap-2 justify-center md:justify-end">
                           {['Business Growth', 'Client Relations', 'Global Expansion', 'Service Excellence'].map((skill) => (
@@ -269,7 +269,7 @@ export default function About() {
                         <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
                         <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
                           <img
-                            src="/src/Manish.png"
+                            src="/Manish.png"
                             alt="Manish Motiyani"
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
@@ -278,13 +278,13 @@ export default function About() {
                       
                       <div className="flex-1 text-center md:text-left">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
-                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">COO & Partner</span>
+                          <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">COO & PARTNER</span>
                         </div>
                         <h3 className="font-display text-3xl font-bold text-white mb-4">
                           Manish Motiyani
                         </h3>
                         <p className="text-white/80 font-light leading-relaxed mb-6">
-                          With over 5 years of operational excellence in the travel industry, Manish drives day-to-day operations and strategic partnerships. His focus on efficiency and customer satisfaction has been instrumental in scaling TRIP NOISE's operations across multiple markets.
+                          Drawing on 10+ years of experience across African and Gulf markets, Manish offers a unique global perspective shaped by deep regional understanding and strategic business leadership. His vision for innovation and operational excellence continues to guide TRIP NOISE toward sustainable international growth.
                         </p>
                         <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                           {['Operations Management', 'Strategic Partnerships', 'Customer Experience', 'Business Growth'].map((skill) => (
