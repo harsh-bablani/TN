@@ -27,7 +27,7 @@ const services = [
   { icon: Calendar, label: 'Event Travel' },
   { icon: Globe, label: 'Tourism Packages' },
   { icon: Landmark, label: 'Government Travel' },
-  ];
+];
 
 const values = [
   {
@@ -158,7 +158,7 @@ export default function About() {
       <section ref={teamRef} className="relative py-32 px-6 bg-gradient-to-br from-brand-dark-blue via-brand-dark-blue/95 to-black overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-gold/5 to-transparent" />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="text-center mb-20 section-animate">
             <div className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full mb-8">
@@ -184,16 +184,16 @@ export default function About() {
                   <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
                       <div className="relative flex-shrink-0">
-                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
-                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-lg blur-lg opacity-50" />
+                        <div className="relative w-48 rounded-lg overflow-hidden border-4 border-white/20">
                           <img
                             src="/Neeraj.jpg"
                             alt="Neeraj Vatwani"
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            className="w-full h-auto block group-hover:scale-110 transition-transform duration-500"
                           />
                         </div>
                       </div>
-                      
+
                       <div className="flex-1 text-center md:text-left">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
                           <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">CEO & PARTNER</span>
@@ -224,16 +224,16 @@ export default function About() {
                   <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20 min-h-[380px] lg:max-w-[800px]">
                     <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
                       <div className="relative flex-shrink-0">
-                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
-                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-lg blur-lg opacity-50" />
+                        <div className="relative w-48 rounded-lg overflow-hidden border-4 border-white/20">
                           <img
                             src="/Rajesh.jpg"
                             alt="Rajesh Nankani"
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            className="w-full h-auto block group-hover:scale-110 transition-transform duration-500"
                           />
                         </div>
                       </div>
-                      
+
                       <div className="flex-1 text-center md:text-right">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
                           <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">MANAGING DIRECTOR & PARTNER</span>
@@ -242,7 +242,7 @@ export default function About() {
                           Rajesh Nankani
                         </h3>
                         <p className="text-white/80 font-light leading-relaxed mb-6">
-                          Rajesh Nankani is a seasoned travel industry professional with over 8 years of experience in sales, business development, operations, and leadership. Having progressed from Sales Executive to leadership roles including Country Manager and Regional Manager, he has developed strong expertise in global travel markets and customer engagement. As the Founder & Director of TRIP NOISE, Rajesh is focused on delivering customer-centric travel solutions while driving business growth and operational excellence across international markets.
+                          Rajesh Nankani is a seasoned travel industry professional with over 8 years of experience in sales, business development and leadership. Having progressed from Sales Executive to leadership roles including Country Manager and Regional Manager, he has developed strong expertise in global travel markets and customer engagement.
                         </p>
                         <div className="flex flex-wrap gap-2 justify-center md:justify-end">
                           {['Business Growth', 'Client Relations', 'Global Expansion', 'Service Excellence'].map((skill) => (
@@ -266,16 +266,16 @@ export default function About() {
                   <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-brand-gold/20">
                     <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
                       <div className="relative flex-shrink-0">
-                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full blur-lg opacity-50" />
-                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white/20">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-lg blur-lg opacity-50" />
+                        <div className="relative w-48 rounded-lg overflow-hidden border-4 border-white/20">
                           <img
                             src="/Manish.png"
                             alt="Manish Motiyani"
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            className="w-full h-auto block group-hover:scale-110 transition-transform duration-500"
                           />
                         </div>
                       </div>
-                      
+
                       <div className="flex-1 text-center md:text-left">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-full mb-4">
                           <span className="text-brand-dark-blue font-body font-bold text-xs tracking-wider uppercase">COO & PARTNER</span>

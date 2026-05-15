@@ -28,7 +28,7 @@ export default function App() {
       case 'blogs':
         return <Blogs />;
       case 'packages':
-        return <Packages />;
+        return <Packages onNavigate={handleNavigate} />;
       default:
         return <Home onNavigate={handleNavigate} />;
     }
