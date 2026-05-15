@@ -52,7 +52,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           <img 
             src={Logo} 
             alt="Trip Noise Logo" 
-            className="h-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300 filter drop-shadow-lg"
+            className="h-[60px] md:h-[90px] lg:h-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300 filter drop-shadow-lg"
           />
         </button>
 
@@ -99,7 +99,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-200 px-6 py-6 flex flex-col gap-3">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-200 px-6 py-6 flex flex-col gap-3 max-h-[85vh] overflow-y-auto shadow-2xl">
           {navLinks.map((link) => (
             <button
               key={link.page}

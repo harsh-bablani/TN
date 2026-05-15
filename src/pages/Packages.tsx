@@ -478,7 +478,7 @@ const packages = [
       "Tarangire National Park Game Drive",
       "Bush Breakfast Experience"
     ],
-    image: "https://images.pexels.com/photos/1524317/pexels-photo-1524317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "/Tanzania.jpeg",
     rating: 5.0,
     reviews: 485,
     category: "Adventure",
@@ -577,7 +577,7 @@ export default function Packages({ onNavigate }: { onNavigate: (page: string) =>
   return (
     <div className="min-h-screen bg-brand-bg relative">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-to-br from-brand-dark-blue to-brand-dark-blue/80 text-white">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-28 px-6 bg-gradient-to-br from-brand-dark-blue to-brand-dark-blue/80 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-8 text-brand-gold text-xs font-body font-semibold tracking-[0.25em] uppercase">

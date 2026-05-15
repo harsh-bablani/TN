@@ -70,7 +70,7 @@ const blogPosts = [
     date: "March 3, 2024",
     readTime: "12 min read",
     category: "Food & Travel",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df81cc5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2070&auto=format&fit=crop",
     likes: 278,
     comments: 54
   }
@@ -86,7 +86,7 @@ export default function Blogs() {
   return (
     <div className="min-h-screen bg-brand-bg">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-to-br from-brand-dark-blue to-brand-dark-blue/80 text-white">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-28 px-6 bg-gradient-to-br from-brand-dark-blue to-brand-dark-blue/80 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-8 text-brand-gold text-xs font-body font-semibold tracking-[0.25em] uppercase">
@@ -132,13 +132,13 @@ export default function Blogs() {
                 key={post.id}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-brand-gold text-white text-xs font-body font-semibold rounded-full">
                       {post.category}

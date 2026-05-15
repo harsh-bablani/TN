@@ -64,7 +64,7 @@ export default function About() {
     <main className="bg-brand-bg">
       <section
         ref={heroRef}
-        className="relative pt-32 pb-24 px-6 overflow-hidden"
+        className="relative pt-32 md:pt-48 pb-20 md:pb-28 px-6 overflow-hidden"
         style={{
           background: 'linear-gradient(135deg, #0D3B82 0%, #1E5AA8 60%, #0D3B82 100%)',
         }}
@@ -129,7 +129,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="slide-animate-right grid grid-cols-2 gap-5">
+            <div className="slide-animate-right grid grid-cols-1 sm:grid-cols-2 gap-5">
               <img
                 src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Travel destination"
@@ -227,7 +227,7 @@ export default function About() {
                         <div className="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-yellow rounded-lg blur-lg opacity-50" />
                         <div className="relative w-48 rounded-lg overflow-hidden border-4 border-white/20">
                           <img
-                            src="/Rajesh.jpg"
+                            src="/RN.jpeg"
                             alt="Rajesh Nankani"
                             className="w-full h-auto block group-hover:scale-110 transition-transform duration-500"
                           />
@@ -284,7 +284,7 @@ export default function About() {
                           Manish Motiyani
                         </h3>
                         <p className="text-white/80 font-light leading-relaxed mb-6">
-                          Drawing on 10+ years of experience across African and Gulf markets, Manish offers a unique global perspective shaped by deep regional understanding and strategic business leadership. His vision for innovation and operational excellence continues to guide TRIP NOISE toward sustainable international growth.
+                          Drawing on 5+ years of experience across African and Gulf markets, Manish offers a unique global perspective shaped by deep regional understanding and strategic business leadership. His vision for innovation and operational excellence continues to guide TRIP NOISE toward sustainable international growth.
                         </p>
                         <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                           {['Operations Management', 'Strategic Partnerships', 'Customer Experience', 'Business Growth'].map((skill) => (
@@ -390,7 +390,7 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-2xl mx-auto">
             {services.map((service, index) => (
               <div key={index} className="section-animate group p-6 rounded-2xl bg-white hover:bg-brand-dark-blue card-hover border border-gray-100 transition-all duration-400 cursor-default">
                 <service.icon
@@ -409,7 +409,7 @@ export default function About() {
 
       <section className="py-16 px-6 bg-gradient-to-r from-brand-dark-blue to-brand-blue">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: '10K+', label: 'Happy Travelers' },
               { number: '60+', label: 'Countries' },

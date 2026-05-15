@@ -67,7 +67,7 @@ Please contact me to discuss my travel plans.`;
     <main className="bg-brand-bg">
       <section
         ref={heroRef}
-        className="relative pt-32 pb-24 px-6 overflow-hidden"
+        className="relative pt-32 md:pt-48 pb-20 md:pb-28 px-6 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #0D3B82 0%, #1E5AA8 100%)' }}
       >
         <div className="absolute inset-0 opacity-10"

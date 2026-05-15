@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Compass, Calendar, ShieldCheck, Headphones, Camera, Gem } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (page: string) => void;
@@ -6,70 +6,62 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onNavigate }: HeroSectionProps) {
   return (
-    <section className="relative w-full h-screen min-h-[600px] overflow-hidden flex items-center justify-center">
+    <section className="relative w-full h-[100dvh] min-h-[600px] md:h-screen md:min-h-[700px] overflow-hidden flex items-center">
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 w-full h-full bg-cover bg-[75%_center] md:bg-center bg-no-repeat transition-all duration-700"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+          backgroundImage: "url('/Hero.png')"
         }}
       />
       
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-dark-blue/70 via-brand-dark-blue/50 to-brand-dark-blue/70" />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/40 md:bg-black/30" />
 
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <div
-          className="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-8 text-brand-yellow text-xs font-body font-semibold tracking-[0.25em] uppercase"
-          style={{ animationDelay: '0.2s' }}
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-gold animate-pulse" />
-          Premium Travel Experience
-        </div>
-
-        <h1
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] mb-6"
-          style={{ textShadow: '0 4px 30px rgba(0,0,0,0.4)' }}
-        >
-          Unleash
-          <br />
-          <span className="text-gradient-gold italic">Silent Trails</span>
-        </h1>
-
-        <p className="font-body text-lg sm:text-xl text-white/80 max-w-xl mx-auto mb-10 font-light leading-relaxed">
-          Experience travel with precision, luxury, and peace.
-          <br className="hidden sm:block" />
-          Your journey. Redefined.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={() => {
-              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="btn-gold px-10 py-4 rounded-2xl text-base font-body font-bold tracking-wide shadow-2xl"
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-12 lg:px-20 py-8 md:py-12">
+        <div className="max-w-xl">
+          <div
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 md:px-4.5 md:py-2 rounded-full mb-6 text-white text-[10px] md:text-[11px] font-body font-semibold tracking-[0.2em] md:tracking-[0.25em] uppercase"
+            style={{ animationDelay: '0.2s' }}
           >
-            Explore Trips
-          </button>
-          <button
-            onClick={() => onNavigate('contact')}
-            className="btn-outline px-10 py-4 rounded-2xl text-base font-body tracking-wide"
+            <Compass size={13} className="text-white/80" />
+            Premium Travel Experience
+          </div>
+
+          <h1
+            className="font-display text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-6"
+            style={{ textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}
           >
-            Book Now
-          </button>
+            Unleash
+            <br />
+            <span className="text-brand-gold italic">Silent Trails</span>
+          </h1>
+
+          <div className="w-14 md:w-20 h-1 bg-brand-gold/50 mb-6 md:mb-8 rounded-full" />
+
+          <p className="font-body text-base md:text-xl text-white/90 max-w-sm md:max-w-lg mb-10 font-light leading-relaxed">
+            Experience travel with precision, luxury, and peace.
+            Your journey. Redefined.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-5 items-stretch sm:items-start">
+            <button
+              onClick={() => onNavigate('packages')}
+              className="group bg-brand-gold hover:bg-brand-yellow text-brand-dark-blue px-8 py-3.5 md:px-9 md:py-4 rounded-xl text-sm md:text-base font-body font-bold tracking-wide shadow-xl transition-all duration-300 flex items-center justify-center gap-3"
+            >
+              <Compass size={19} className="group-hover:rotate-45 transition-transform duration-500" />
+              Explore Trips
+            </button>
+            <button
+              onClick={() => onNavigate('contact')}
+              className="group border-2 border-white/30 hover:border-white bg-white/10 backdrop-blur-md text-white px-8 py-3.5 md:px-9 md:py-4 rounded-xl text-sm md:text-base font-body font-bold tracking-wide transition-all duration-300 flex items-center justify-center gap-3"
+            >
+              <Calendar size={19} />
+              Book Now
+            </button>
+          </div>
         </div>
       </div>
 
-      <a
-        href="#signature"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-brand-gold transition-colors animate-float"
-        onClick={(e) => {
-          e.preventDefault();
-          document.getElementById('signature')?.scrollIntoView({ behavior: 'smooth' });
-        }}
-      >
-        <ChevronDown size={32} strokeWidth={1.5} />
-      </a>
 
-          </section>
+    </section>
   );
 }
